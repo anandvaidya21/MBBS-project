@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study MBBS Abroad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Hero Section -->
+    <header class="bg-blue-600 text-white text-center py-12">
+        <h1 class="text-4xl font-bold">Study MBBS Abroad</h1>
+        <p class="mt-2">Apply Now for MBBS Abroad</p>
+        <a href="#apply" class="mt-4 inline-block bg-white text-blue-600 px-6 py-2 rounded-full font-bold">Apply Now</a>
+    </header>
+
+    <!-- Why Study MBBS Abroad -->
+    <section class="max-w-4xl mx-auto my-12 px-4">
+        <h2 class="text-2xl font-semibold text-center">Why Study MBBS Abroad?</h2>
+        <ul class="mt-4 list-disc list-inside">
+            <li>Affordable Tuition Fees</li>
+            <li>Globally Recognized Degrees</li>
+            <li>High-Quality Education</li>
+            <li>International Exposure</li>
+        </ul>
+    </section>
+
+    <!-- Top Countries -->
+    <section class="bg-white py-12">
+        <h2 class="text-2xl font-semibold text-center">Top Countries</h2>
+        <div class="flex justify-center mt-4 gap-4 flex-wrap">
+            <span class="bg-blue-500 text-white px-4 py-2 rounded">Russia</span>
+            <span class="bg-blue-500 text-white px-4 py-2 rounded">Uzbekistan</span>
+            <span class="bg-blue-500 text-white px-4 py-2 rounded">Kazakhstan</span>
+            <span class="bg-blue-500 text-white px-4 py-2 rounded">Philippines</span>
+            <span class="bg-blue-500 text-white px-4 py-2 rounded">Georgia</span>
+            <span class="bg-blue-500 text-white px-4 py-2 rounded">Kyrgyzstan</span>
+            <span class="bg-blue-500 text-white px-4 py-2 rounded">Egypt</span>
+        </div>
+    </section>
+
+    <!-- Admission Process -->
+    <section class="max-w-4xl mx-auto my-12 px-4">
+        <h2 class="text-2xl font-semibold text-center">Admission Process & Eligibility</h2>
+        <ol class="mt-4 list-decimal list-inside">
+            <li>Check eligibility criteria</li>
+            <li>Choose preferred country and university</li>
+            <li>Submit application form</li>
+            <li>Receive admission letter</li>
+            <li>Apply for a student visa</li>
+            <li>Fly to your dream university</li>
+        </ol>
+    </section>
+
+    <!-- Call-to-Action Form -->
+    <section id="apply" class="bg-blue-600 text-white py-12 text-center">
+        <h2 class="text-2xl font-semibold">Apply Now</h2>
+        <form class="mt-6 max-w-lg mx-auto bg-white p-6 rounded-lg text-black" id="leadForm">
+            <input type="text" id="name" placeholder="Full Name" class="w-full p-2 border rounded mb-4" required>
+            <input type="email" id="email" placeholder="Email" class="w-full p-2 border rounded mb-4" required>
+            <input type="tel" id="phone" placeholder="Phone Number" class="w-full p-2 border rounded mb-4" required>
+            <select id="country" class="w-full p-2 border rounded mb-4" required>
+                <option value="">Select Country Preference</option>
+                <option value="Russia">Russia</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Egypt">Egypt</option>
+            </select>
+            <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded w-full">Submit</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById("leadForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Your application has been submitted successfully!");
+        });
+    </script>
+</body>
+</html>
